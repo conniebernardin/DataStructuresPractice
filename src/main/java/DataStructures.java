@@ -1,8 +1,9 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class DataStructures{
     public static void main(String[] args) {
-        ArrayList <Number> list = new ArrayList<>(); //creating new list
+        List<Integer> list = new ArrayList<>(); //creating new list
         list.add(10); //intuitive method recall function
         list.add(20);
         list.add(30);
@@ -10,7 +11,7 @@ public class DataStructures{
         testingMethods(list);
     }
 
-    private static void testingMethods(ArrayList list) {
+    private static void testingMethods(List list) {
         System.out.println(list.size());
         list.remove(1); //removing object at index 1
         System.out.println(list.contains(20)); //checking whether 20 was removed using boolean .contains function
