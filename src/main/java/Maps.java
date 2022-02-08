@@ -3,33 +3,37 @@ public class Maps {
 
         public static void main(String[] args) {
             // Create a HashMap object called capitalCities. Key and values both Strings
-            HashMap<String, String> capitalCities = new HashMap<String, String>();
+            capitalCities();
+        }
 
-            // Add keys and values (Country, City)
-            capitalCities.put("England", "London");
-            capitalCities.put("Germany", "Berlin");
-            capitalCities.put("Norway", "Oslo");
-            capitalCities.put("USA", "Washington DC");
-            capitalCities.put("France", "Paris");
-            capitalCities.put("Kenya", "Nairobi");
-            capitalCities.put("Iran", "Tehran");
-            capitalCities.put("Egypt", "Cairo");
-            capitalCities.put("Hungary", "Budapest");
+    private static void capitalCities() {
+        HashMap<String, String> capitalCities = new HashMap<String, String>();
 
-            //retrieve capital for Kenya
-            System.out.println(capitalCities.get("Kenya"));
+        // Add keys and values (Country, City)
+        capitalCities.put("England", "London");
+        capitalCities.put("Germany", "Berlin");
+        capitalCities.put("Norway", "Oslo");
+        capitalCities.put("USA", "Washington DC");
+        capitalCities.put("France", "Paris");
+        capitalCities.put("Kenya", "Nairobi");
+        capitalCities.put("Iran", "Tehran");
+        capitalCities.put("Egypt", "Cairo");
+        capitalCities.put("Hungary", "Budapest");
 
-            //adding new country to capitals
-            capitalCities.put(("Poland"), "Warsaw");
-            capitalCities.put(("Peru"), "Lima");
-            capitalCities.put(("New Zealand"), "Wellington");
+        //retrieve capital for Kenya
+        System.out.println(capitalCities.get("Kenya"));
 
-            System.out.println(capitalCities.size());
+        //adding new country to capitals
+        capitalCities.put(("Poland"), "Warsaw");
+        capitalCities.put(("Peru"), "Lima");
+        capitalCities.put(("New Zealand"), "Wellington");
 
-            //looping through countries in map
-            for (String i : capitalCities.keySet()) {
-                System.out.println(i);
-            }
+        System.out.println(capitalCities.size());
+
+        //looping through countries in map
+        for (String i : capitalCities.keySet()) {
+            System.out.println(i);
         }
     }
+}
 
