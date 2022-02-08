@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class DataStructures{
     public static void main(String[] args) {
-        ArrayList list = new ArrayList(); //creating new list
+        ArrayList <Number> list = new ArrayList<>(); //creating new list
         list.add(10); //intuitive method recall function
         list.add(20);
         list.add(30);
