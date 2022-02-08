@@ -20,11 +20,16 @@ public class Maps {
             System.out.println(capitalCities.get("Kenya"));
 
             //adding new country to capitals
-            capitalCities.put(("Warsaw"), "poland");
-            capitalCities.put(("Lima"), "Peru");
-            capitalCities.put(("Wellington"), "New Zealand");
+            capitalCities.put(("Poland"), "Warsaw");
+            capitalCities.put(("Peru"), "Lima");
+            capitalCities.put(("New Zealand"), "Wellington");
 
             System.out.println(capitalCities.size());
+
+            //looping through countries in map
+            for (String i : capitalCities.keySet()) {
+                System.out.println(i);
+            }
         }
     }
 
