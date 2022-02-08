@@ -13,7 +13,18 @@ public class Maps {
             capitalCities.put("France", "Paris");
             capitalCities.put("Kenya", "Nairobi");
             capitalCities.put("Iran", "Tehran");
-            System.out.println(capitalCities);
+            capitalCities.put("Egypt", "Cairo");
+            capitalCities.put("Hungary", "Budapest");
+
+            //retrieve capital for Kenya
+            System.out.println(capitalCities.get("Kenya"));
+
+            //adding new country to capitals
+            capitalCities.put(("Warsaw"), "poland");
+            capitalCities.put(("Lima"), "Peru");
+            capitalCities.put(("Wellington"), "New Zealand");
+
+            System.out.println(capitalCities.size());
         }
     }
 
