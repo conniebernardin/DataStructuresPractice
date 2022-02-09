@@ -32,13 +32,13 @@ class MostOccurancesTest {
     void itReturnMostCommonNumberWhenOnlyOneMODE() {
         //GIVEN
         MostOccurances mostOccurances = new MostOccurances(); //create instance of the class
-        String input = "3,3,4,6"; //create an input
+        String input = "3,3,4,4,4,6,6,6,6"; //create an input
 
         //WHEN
         List<String> actual = mostOccurances.modeNumbers(input); //call method and give input, save as List because method returns List
 
         //THEN
-        List <String> expected = Arrays.asList("3");
+        List <String> expected = Arrays.asList("6");
 
         assertThat(actual).isEqualTo(expected);
     }
