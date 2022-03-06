@@ -7,7 +7,7 @@ public class Maps {
         }
 
     private static void capitalCities() {
-        HashMap<String, String> capitalCities = new HashMap<String, String>();
+        HashMap<String, String> capitalCities = new HashMap<>();
 
         // Add keys and values (Country, City)
         capitalCities.put("England", "London");
